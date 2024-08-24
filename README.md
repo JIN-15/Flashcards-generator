@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# FlashMaster
 
-First, run the development server:
+**FlashMaster** is a powerful and modern web application designed to help users create, manage, and study flashcards. Built with Next.js for both frontend and backend, this application leverages Firebase for database management and integrates the Meta-Llama/llama-3.1-8b model for intelligent flashcard generation. Whether you're a student, professional, or lifelong learner, FlashMaster provides a seamless experience for generating and managing personalized flashcards.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## [Ali Hassan](https://www.linkedin.com/in/ali-hassan-08b306226/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Homepage:** A welcoming dashboard that provides an overview and access to flashcard functionalities.
+- **User Authentication:** Secure sign-in and sign-up pages using Clerk components.
+- **Flashcard Generation:** Users can generate flashcards based on their input, with content personalized to their user ID and stored in Firebase.
+- **Flashcard Management:** Option to load and save flashcards with titles and collections. Each collection contains 10 flashcards on a specific topic.
+- **Subscription Model:** Basic and Pro packages available for purchase to access different features and premium content.
+- **Material UI Integration:** Modern and responsive design using Material UI components for a professional look and feel.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+To set up FlashMaster locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the Repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/JIN-15/Flashcards-generator.git
+   cd flashmaster
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Install Dependencies:**
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Set Up Environment Variables:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Create a `.env.local` file in the root directory and add the following environment variables:
+
+   ```
+   NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
+    STRIPE_SECRET_KEY=your_stripe_secret_key
+    OPENAI_API_KEY=your_openai_api_key
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+    CLERK_SECRET_KEY=your_clerk_secret_key
+   ```
+
+4. **Run the Application:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Visit `http://localhost:3000` in your browser to see FlashMaster in action.
+
+## Screenshots
+
+Here are some screenshots of FlashMaster in action:
+
+1. ![Homepage](/assets/home.png)
+2. ![Sign In Page](/assets/signin.png)
+3. ![Flashcard Creation](/assets/generate.png)
+4. ![Flashcard Collection](/assets/saved.png)
+5. ![Loading saved cards](/assets/load.png)
+
+## Video Demonstration
+
+Watch our [YouTube video](https://youtu.be/edQyPqgg4zY) to see FlashMaster in action and learn more about its features.
+
+## Technologies Used
+
+- **Next.js:** Full-stack framework for React applications.
+- **Firebase:** Real-time database and authentication.
+- **Meta-Llama/llama-3.1-8b:** For intelligent flashcard generation.
+- **Material UI:** Component library for modern UI design.
+- **Clerk:** User authentication and management.
+
+## Contributing
+
+We welcome contributions to FlashMaster! If you have suggestions or improvements, please fork the repository and create a pull request. For major changes, please open an issue to discuss the changes before making a pull request.
+
+## Contact
+
+For any questions or feedback, please reach out to [hassanakramali@gmail.com](mailto:hassanakramali@gmail.com).
+
+---
+
+Thank you for using FlashMaster. We hope it enhances your learning experience!
