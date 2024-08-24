@@ -97,9 +97,13 @@ Deploy your application on Vercel for seamless hosting:
 Here are some screenshots of FlashMaster in action:
 
 1. ![Homepage](/assets/home.png)
+
 2. ![Sign In Page](/assets/signin.png)
+   
 3. ![Flashcard Creation](/assets/generate.png)
+   
 4. ![Flashcard Collection](/assets/saved.png)
+   
 5. ![Loading saved cards](/assets/load.png)
 
 ## Video Demonstration
