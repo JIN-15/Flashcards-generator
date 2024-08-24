@@ -21,11 +21,11 @@ Remember, the goal is to facilitate effective learning and retention of informat
 
 export async function POST(req) {
     const data = await req.json();
-
+    const API_KEY = process.env.LLAMA_API_KEY;
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${LLAMA_API_KEY}`,
             "HTTP-Referer": "YOUR_SITE_URL",
             "X-Title": "YOUR_SITE_NAME",
             "Content-Type": "application/json"
