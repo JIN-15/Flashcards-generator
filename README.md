@@ -36,13 +36,13 @@ To set up FlashMaster locally, follow these steps:
    Create a `.env.local` file in the root directory and add the following environment variables:
 
    ```
-   NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
+    NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
     STRIPE_SECRET_KEY=your_stripe_secret_key
     LLAMA_API_KEY=your_api_key
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
     CLERK_SECRET_KEY=your_clerk_secret_key
    ```
-   
+
 ## Firebase Connectivity
 
 Set up Firebase for backend services and data storage:
